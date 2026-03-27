@@ -1,7 +1,14 @@
-// import "./App.css";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 function App() {
-	return <h1>Coline</h1>;
+	return (
+		<header>
+			<Navbar />
+			<Hero />
+		</header>
+	);
 }
 
 export default App;

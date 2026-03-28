@@ -1,0 +1,131 @@
+.project-card {
+	background: white;
+	border: 1px solid #e8e6e1;
+	border-radius: 20px;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	cursor: pointer;
+	transition: var(--transition);
+	box-shadow: 0 1px 3px rgba(26, 25, 23, 0.06);
+}
+
+/* ── Header ───────────────────────────────── */
+.project-card__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.project-card__number {
+	font-size: 11px;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	color: #c4c1bb;
+	transition: var(--transition);
+}
+
+.project-card__badge {
+	font-size: 10px;
+	font-weight: 500;
+	padding: 2px 8px;
+	border-radius: 30px;
+	background: #fdf0ed;
+	color: #e8715a;
+	border: 1px solid #f5c5ba;
+}
+
+/* ── Content ──────────────────────────────── */
+.project-card__title {
+	font-size: 20px;
+	font-weight: 400;
+	color: #1a1917;
+	line-height: 1.2;
+}
+
+.project-card__desc {
+	font-size: 13px;
+	color: #8a8780;
+	line-height: 1.6;
+	flex: 1;
+}
+
+.project-card__techs {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+/* ── Links ────────────────────────────────── */
+.project-card__links {
+	display: flex;
+	gap: 12px;
+	margin-top: 4px;
+	padding-top: 12px;
+	border-top: 1px solid #e8e6e1;
+}
+
+.project-card__link {
+	font-size: 12px;
+	font-weight: 500;
+	color: #8a8780;
+	transition: var(--transition);
+}
+
+.project-card__link--live {
+	color: #1a1917;
+}
+
+.project-card__link:hover {
+	color: #e8715a;
+}
+
+/* ── Hover carte normale ──────────────────── */
+.project-card:hover {
+	background: #fdf0ed;
+	border-color: #f5c5ba;
+	box-shadow: 0 8px 28px rgba(232, 113, 90, 0.14);
+	transform: translateY(-3px);
+}
+
+.project-card:hover .project-card__number {
+	color: #e8715a;
+}
+
+/* ── Featured — styles de base ────────────── */
+.project-card--featured {
+	grid-row: span 2;
+	background: #1a1917;
+	border-color: #4a4845;
+}
+
+.project-card--featured .project-card__number {
+	color: #8a8780;
+}
+
+.project-card--featured .project-card__title {
+	color: white;
+}
+
+.project-card--featured .project-card__desc {
+	color: #c4c1bb;
+}
+
+.project-card--featured .project-card__links {
+	border-top-color: #4a4845;
+}
+
+.project-card--featured .project-card__link--live {
+	color: white;
+}
+
+/* ── Featured — hover ─────────────────────── */
+.project-card--featured:hover {
+	background: #2a1f1c;
+	border-color: #e8715a;
+}
+
+.project-card--featured:hover .project-card__number {
+	color: #e8715a;
+}

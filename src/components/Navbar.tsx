@@ -14,17 +14,17 @@ function Navbar() {
 	return (
 		<header className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
 			<a href="#hero" className="navbar__logo">
-				Coline Rabemihoatra
+				Logo
 			</a>
 			<nav className="navbar__links">
-				<a href="#projects">Projets</a>
-				<a href="#about">À propos</a>
-				<a href="#skills">Skills</a>
-				<a href="#contact">Contact</a>
+				<a href="#projects">PROJETS</a>
+				<a href="#about">À PROPOS</a>
+				<a href="#skills">SKILLS</a>
+				<a href="#contact">CONTACT</a>
 			</nav>
 			<div className="navbar__status">
 				<span className="navbar__dot" />
-				Disponible — juillet 2026
+				Disponible — Sept. 2026
 			</div>
 		</header>
 	);

@@ -9,22 +9,23 @@
 	justify-content: space-between;
 	padding: 0 40px;
 	height: 60px;
+	background: var(--second-color);
 	transition: var(--transition);
+	font-family: var(--font-nav);
 }
 
 .navbar--scrolled {
-	background: rgba(249, 246, 241, 0.92);
 	backdrop-filter: blur(12px);
 	border-bottom: 1px solid var(--text-color);
 }
 
 .navbar__logo {
-	font-size: 18px;
+	font-size: 13px;
 }
 
 .navbar__links {
 	display: flex;
-	gap: 32px;
+	gap: 60px;
 }
 
 .navbar__links a {

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IE:wght@100..400&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -5,19 +7,21 @@
 }
 
 :root {
-	--bg-color: #fefefe;
-	--second-color: #f1f1f3;
-	--text-color: #272b2f;
-	--text-color-muted: #6c63ff;
+	--bg-color: rgba(249, 246, 241, 0.92);
+	--second-color: #fefefe;
+	--text-color: #03252c;
+	--text-color-muted: #427180;
+	--font-title: "Delius Swash Caps", cursive;
 	--font-main:
 		"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
 		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
 	font-family: var(--font-main);
 	background-color: var(--bg-color);
-	color: var(--color-text);
+	color: var(--text-color);
 	line-height: 1.5;
 }
 

@@ -96,12 +96,12 @@
 /* ── Featured — styles de base ────────────── */
 .project-card--featured {
 	grid-row: span 2;
-	background: #1a1917;
-	border-color: #4a4845;
+	background: #e8715a;
+	border-color: white;
 }
 
 .project-card--featured .project-card__number {
-	color: #8a8780;
+	color: darkblue;
 }
 
 .project-card--featured .project-card__title {
@@ -109,7 +109,7 @@
 }
 
 .project-card--featured .project-card__desc {
-	color: #c4c1bb;
+	color: whitesmoke;
 }
 
 .project-card--featured .project-card__links {
@@ -122,7 +122,7 @@
 
 /* ── Featured — hover ─────────────────────── */
 .project-card--featured:hover {
-	background: #2a1f1c;
+	background: rgba(93, 0, 255, 0.764);
 	border-color: #e8715a;
 }
 

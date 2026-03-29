@@ -1,5 +1,6 @@
 import "./Hero.css";
-import profil from "../assets/profil.png";
+import grille from "../assets/grille-transparente.png";
+import coline from "../assets/coline.png";
 
 function Hero() {
 	const tags = ["React", "TypeScript", "Node.js", "Python", "IA"];
@@ -19,15 +20,17 @@ function Hero() {
 		<section className="hero" id="hero">
 			{/* Left column — text */}
 			<div className="hero__content">
-				<p className="section-label hero__eyebrow">développeuse full stack</p>
-				<h1 className="hero__name">
-					C<em>o</em>line
-				</h1>
-				<p className="hero__tagline">
-					Je construis des produits web modernes,
+				<p className="section-label hero__eyebrow">
+					développeuse
 					<br />
-					performants et centrés utilisateur.
+					full stack
 				</p>
+				<div className="bubble-top">
+					<h1 className="hero__name">Coline</h1>
+					<p className="hero__tagline">
+						La rigueur de la finance, la créativité du code.
+					</p>
+				</div>
 
 				<div className="hero__tags">
 					{tags.map((tag) => (
@@ -49,9 +52,10 @@ function Hero() {
 
 			{/* Right column — photo */}
 			<div className="hero__photo-wrap">
+				<img src={grille} alt="" className="hero__grid" aria-hidden="true" />
 				<img
-					src={profil}
-					alt="Coline Rousseau, développeuse full stack"
+					src={coline}
+					alt="Coline Rabemihoatra, développeuse full stack"
 					className="hero__photo"
 				/>
 				<div className="hero__badge">

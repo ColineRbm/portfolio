@@ -1,0 +1,118 @@
+.contact {
+	padding: 80px 48px 40px;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.contact__inner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 64px;
+	align-items: center;
+	padding-bottom: 60px;
+	border-bottom: 1px solid #e8e6e1;
+}
+
+/* ── Left ─────────────────────────────────── */
+.contact__title {
+	font-family: var(--font-nav);
+	font-size: clamp(32px, 4vw, 52px);
+	font-weight: 400;
+	line-height: 1.1;
+	color: #1a1917;
+	margin: 12px 0 16px;
+}
+
+.em-color {
+	color: #e8715a;
+	font-style: italic;
+}
+
+.contact__desc {
+	font-size: 14px;
+	color: #8a8780;
+	line-height: 1.7;
+	max-width: 320px;
+}
+
+/* ── Right ────────────────────────────────── */
+.contact__right {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.contact__email {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 18px 24px;
+	background: white;
+	border: 1px solid #e8e6e1;
+	border-radius: 12px;
+	font-family: var(--font-nav);
+	font-size: 14px;
+	color: #4a4845;
+	cursor: pointer;
+	transition: var(--transition);
+	width: 100%;
+}
+
+.contact__email:hover {
+	background: #fdf0ed;
+	border-color: #f5c5ba;
+	color: #e8715a;
+}
+
+.contact__email-action {
+	font-size: 12px;
+	color: #c4c1bb;
+}
+
+.contact__email:hover .contact__email-action {
+	color: #e8715a;
+}
+
+.contact__links {
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+}
+
+.contact__link {
+	font-size: 13px;
+	font-weight: 500;
+	padding: 9px 18px;
+	border-radius: 6px;
+	border: 1px solid #e8e6e1;
+	color: #4a4845;
+	background: white;
+	transition: var(--transition);
+}
+
+.contact__link:hover {
+	border-color: #f5c5ba;
+	color: #e8715a;
+	background: #fdf0ed;
+}
+
+.contact__link--primary {
+	background: #1a1917;
+	color: white;
+	border-color: #1a1917;
+}
+
+.contact__link--primary:hover {
+	background: #e8715a;
+	border-color: #e8715a;
+	color: white;
+}
+
+/* ── Footer ───────────────────────────────── */
+.contact__footer {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 24px;
+	font-size: 12px;
+	color: #c4c1bb;
+}

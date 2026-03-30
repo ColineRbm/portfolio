@@ -10,7 +10,7 @@
 	background-color: var(--second-color);
 }
 
-/* â”€â”€ Left column â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* left column */
 .hero__content {
 	display: flex;
 	flex-direction: column;

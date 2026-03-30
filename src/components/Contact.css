@@ -24,7 +24,7 @@
 }
 
 .em-color {
-	color: #e8715a;
+	color: var(--text-color-two);
 	font-style: italic;
 }
 

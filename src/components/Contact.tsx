@@ -20,7 +20,7 @@ export default function Contact() {
 						<em className="em-color">Parlons-en.</em>
 					</h2>
 					<p className="contact__desc">
-						Je suis disponible à partir de juillet 2026 pour un poste en
+						Je suis disponible à partir de septembre 2026 pour un poste en
 						développement web/mobile & IA. N'hésitez pas à me contacter !
 					</p>
 				</div>

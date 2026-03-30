@@ -35,7 +35,7 @@ function Hero() {
 		{
 			id: 5,
 			icon: <Backpack size={14} color="var(--text-color-two)" />,
-			text: " 4 mois d'Asie du Sud-Est en backpck en 2025",
+			text: " 4 mois d'Asie du Sud-Est en backpack, 2025",
 		},
 	];
 

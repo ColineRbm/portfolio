@@ -26,3 +26,19 @@
 .projects__grid > *:first-child {
 	grid-row: span 2;
 }
+
+@media (max-width: 768px) {
+	.projects {
+		padding: 60px 20px;
+	}
+
+	.projects__grid {
+		grid-template-columns: 1fr !important;
+		grid-template-rows: auto !important;
+		gap: 16px;
+	}
+
+	.projects__grid > *:first-child {
+		grid-row: auto !important;
+	}
+}

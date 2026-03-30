@@ -116,3 +116,69 @@
 	line-height: 1.5;
 	color: var(--text-color-two);
 }
+
+/* =========================
+   TABLET
+   ========================= */
+@media (max-width: 1024px) {
+	.about {
+		grid-template-columns: 1fr;
+		gap: 60px;
+		padding: 100px 80px 60px;
+	}
+
+	.about__photo-col {
+		display: none;
+	}
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+@media (max-width: 768px) {
+	.about {
+		grid-template-columns: 1fr;
+		gap: 40px;
+		padding: 60px 20px 40px;
+	}
+
+	.about__photo-col {
+		display: none;
+	}
+
+	.about__text-col {
+		gap: 16px;
+	}
+
+	.about__title {
+		font-size: clamp(28px, 6vw, 40px);
+	}
+
+	.about__desc {
+		font-size: 14px;
+		line-height: 1.7;
+	}
+
+	/* icône cachée → 2 colonnes seulement : année + contenu */
+	.timeline-icon {
+		display: none;
+	}
+
+	.timeline-item {
+		grid-template-columns: 50px 1fr;
+		gap: 8px;
+	}
+
+	/* empêche le contenu de rester coincé dans une colonne étroite */
+	.timeline-item__content {
+		min-width: 0;
+	}
+
+	.timeline-item__year {
+		font-size: 11px;
+	}
+
+	.timeline-item__content p {
+		font-size: 12.5px;
+	}
+}

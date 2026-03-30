@@ -1,3 +1,15 @@
+/* ─────────────────────────────
+   GRID CONTAINER (IMPORTANT)
+───────────────────────────── */
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 24px;
+}
+
+/* ─────────────────────────────
+   CARD BASE
+───────────────────────────── */
 .project-card {
 	background: white;
 	border: 1px solid #e8e6e1;
@@ -9,9 +21,10 @@
 	cursor: pointer;
 	transition: var(--transition);
 	box-shadow: 0 1px 3px rgba(26, 25, 23, 0.06);
+	height: 100%;
 }
 
-/* ── Header ───────────────────────────────── */
+/* ── HEADER ── */
 .project-card__header {
 	display: flex;
 	justify-content: space-between;
@@ -36,7 +49,7 @@
 	border: 1px solid #f5c5ba;
 }
 
-/* ── Content ──────────────────────────────── */
+/* ── CONTENT ── */
 .project-card__title {
 	font-size: 20px;
 	font-weight: 400;
@@ -57,7 +70,7 @@
 	gap: 6px;
 }
 
-/* ── Links ────────────────────────────────── */
+/* ── LINKS ── */
 .project-card__links {
 	display: flex;
 	gap: 12px;
@@ -66,6 +79,7 @@
 	border-top: 1px solid #fdf0ed;
 }
 
+/* ── HOVER ── */
 .project-card__link {
 	font-size: 12px;
 	font-weight: 500;
@@ -77,7 +91,6 @@
 	color: var(--text-color-two);
 }
 
-/* ── Hover carte normale ──────────────────── */
 .project-card:hover {
 	background: #fdf0ed;
 	border-color: var(--text-color-two);
@@ -89,7 +102,9 @@
 	color: var(--text-color-two);
 }
 
-/* ── Featured — styles de base ────────────── */
+/* ─────────────────────────────
+   FEATURED CARD
+───────────────────────────── */
 .project-card--featured {
 	grid-row: span 2;
 	background: var(--text-color-two);
@@ -112,17 +127,12 @@
 	border-top-color: var(--text-white);
 }
 
-.project-card--featured .project-card__link--live {
-	color: white;
-}
-
-/* ── Featured — hover ─────────────────────── */
 .project-card--featured:hover {
 	background: var(--text-color-one);
 	border-color: var(--text-color-one);
 }
 
-.project-card--featured:hover .project-card__number {
+.project-card--featured:hover .project-card__techs {
 	color: var(--text-color-two);
 }
 
@@ -130,7 +140,74 @@
 	color: var(--text-white);
 }
 
-.project-card--featured:hover .tag {
-	color: var(--text-color-two);
-	border-color: var(--text-white);
+/* ─────────────────────────────
+   TABLET
+───────────────────────────── */
+@media (max-width: 1024px) {
+	.projects-grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.project-card {
+		padding: 20px;
+		border-radius: 16px;
+	}
+
+	.project-card__title {
+		font-size: 18px;
+	}
+
+	.project-card--featured {
+		grid-row: auto;
+	}
+}
+
+/* ─────────────────────────────
+   MOBILE (STACK CLEAN)
+───────────────────────────── */
+@media (max-width: 768px) {
+	.projects-grid {
+		grid-template-columns: 1fr;
+		gap: 16px;
+		width: 100%;
+	}
+
+	.project-card {
+		width: 100%;
+		min-width: 0;
+		box-sizing: border-box;
+
+		padding: 18px;
+		border-radius: 16px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		height: auto;
+	}
+
+	.project-card__title {
+		font-size: 17px;
+	}
+
+	.project-card__desc {
+		font-size: 12.5px;
+		line-height: 1.5;
+	}
+
+	.project-card__techs,
+	.project-card__links {
+		flex-wrap: wrap;
+	}
+
+	.project-card:hover {
+		transform: none;
+		box-shadow: 0 4px 14px rgba(26, 25, 23, 0.08);
+	}
+
+	.project-card--featured {
+		grid-row: auto;
+	}
 }

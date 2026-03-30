@@ -103,3 +103,63 @@
 	color: var(--text-color-one);
 	margin-top: 170px;
 }
+
+/* =========================
+   TABLET
+   ========================= */
+@media (max-width: 1024px) {
+	.skills {
+		grid-template-columns: 1fr;
+		gap: 60px;
+		padding: 60px 80px;
+	}
+
+	/* on supprime visuellement l'icône */
+	.skills__icon-col {
+		display: none;
+	}
+
+	.skill-row {
+		grid-template-columns: 140px 1fr;
+	}
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+@media (max-width: 768px) {
+	.skills {
+		grid-template-columns: 1fr;
+		gap: 40px;
+		padding: 50px 20px;
+	}
+
+	/* colonne unique */
+	.skills__icon-col {
+		display: none;
+	}
+
+	.skills__text-col {
+		gap: 32px;
+	}
+
+	.skills__title {
+		font-size: clamp(28px, 6vw, 40px);
+	}
+
+	/* rows en stack */
+	.skill-row {
+		grid-template-columns: 1fr;
+		gap: 12px;
+		padding: 20px 0;
+	}
+
+	.skill-row__category {
+		padding-top: 0;
+	}
+
+	.skill-pill {
+		font-size: 11px;
+		padding: 5px 12px;
+	}
+}

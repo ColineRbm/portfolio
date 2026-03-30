@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+**🌐 Portfolio – Coline**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur mon portfolio de développeuse web 🚀
+Ce projet présente mes compétences, mes projets et mon parcours en développement web et mobile.
 
-Currently, two official plugins are available:
+// ----------------------------------------------------------------------------------------------------------------------------------
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**✨ À propos**
 
-## React Compiler
+Après 9 ans en analyse financière dans le secteur bancaire, j’ai décidé de me reconvertir dans le développement web.
+Je suis actuellement en formation intensive à la Wild Code School, avec une spécialisation en React, TypeScript et IA.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**🛠️ Stack technique**
+Frontend : React, TypeScript
+Styling : CSS (modulaire / responsive)
+Build tool : Vite
+Icons : Lucide React
+Versionning : Git / GitHub
 
-## Expanding the ESLint configuration
+// ----------------------------------------------------------------------------------------------------------------------------------
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**📚 Objectifs du projet**
+Construire un portfolio professionnel
+Maîtriser React + TypeScript
+Appliquer les bonnes pratiques (clean code, composants, structure)
+Préparer une entrée en entreprise
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**🎯 Fonctionnalités**
+Design responsive (mobile / desktop)
+Sections : Hero, About, Projects, Contact
+Composants réutilisables
+Animations CSS
+Icônes modernes (Lucide)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+// ----------------------------------------------------------------------------------------------------------------------------------
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🚀 Lancer le projet en local
+# Cloner le repo
+git clone <url-du-repo>
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Aller dans le dossier
+cd portfolio
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Installer les dépendances
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Lancer le serveur
+npm run dev
+
+// ----------------------------------------------------------------------------------------------------------------------------------
+
+**🔮 Améliorations futures**
+> Ajout des projets futurs
+> Animations avancées
+> Utilisation de Router React
+> Connexion à une API (projets dynamiques)
+

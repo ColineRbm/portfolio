@@ -1,31 +1,35 @@
 .hero {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto auto;
-	min-height: 100vh;
+	grid-template-rows: 1fr auto;
+	min-height: 100svh;
+	height: 100svh;
 	padding-top: 60px;
 	position: relative;
 	overflow: hidden;
+	background-color: var(--second-color);
 }
 
-/* Left column */
+/* â”€â”€ Left column â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .hero__content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 60px 48px 40px;
+	padding: 60px 48px 40px 150px;
 	animation: fadeUp 0.7s ease both;
+	background-color: var(--text-color-one);
+	border-top-left-radius: 50px;
 }
 
 .hero__eyebrow {
 	margin-bottom: 40px;
 	font-family: var(--font-third);
 	font-size: 60px;
-	color: var(--text-color-two);
+	color: var(--text-white);
 }
 
 .bubble-top {
-	background-color: var(--text-color-one);
+	background-color: var(--text-white);
 	border-radius: 12px;
 	margin-bottom: 10px;
 	padding: 10px 20px;
@@ -36,16 +40,16 @@
 	font-weight: 400;
 	line-height: 0.95;
 	letter-spacing: -0.02em;
-	color: var(--text-white);
+	color: var(--text-color-two);
 	margin-bottom: 20px;
 }
 
 .hero__tagline {
 	font-size: 15px;
 	line-height: 1.7;
-	max-width: 340px;
+	max-width: 400px;
 	margin-bottom: 6px;
-	color: var(--text-white);
+	color: var(--text-color-two);
 }
 
 .hero__tags {
@@ -53,9 +57,10 @@
 	flex-wrap: wrap;
 	gap: 8px;
 	margin-bottom: 32px;
+	color: var(--text-white);
 }
 
-/* Buttons */
+/* â”€â”€ Buttons â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .hero__cta {
 	display: flex;
 	gap: 12px;
@@ -75,68 +80,82 @@
 }
 
 .btn--primary {
-	background: var(--text-color-one);
+	background: var(--text-color-two);
 	color: var(--bg-color);
-	border-color: var(--text-color-one);
+	border-color: var(--text-color-two);
 }
 
 .btn--primary:hover {
-	background: var(--text-color-two);
-	border-color: var(--text-color-two);
+	background: var(--text-white);
+	border-color: var(--text-white);
+	color: var(--text-color-one);
 	transform: translateY(-1px);
 }
 
 .btn--ghost {
 	background: transparent;
-	color: var(--text-color-one);
-	border-color: var(--text-color-one);
+	color: var(--text-color-two);
+	border-color: var(--text-color-two);
 }
 
 .btn--ghost:hover {
-	border-color: var(--text-color-two);
-	color: var(--text-color-two);
+	border-color: var(--text-white);
+	color: var(--text-white);
 	transform: translateY(-1px);
 }
 
-/* Grille */
+/* â”€â”€ Right column â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .hero__photo-wrap {
 	position: relative;
 	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-	padding: 80px 50px 0 140px;
+	align-items: center;
+	justify-content: center;
+	padding: 60px 150px 40px 48px;
+	background-color: var(--text-color-one);
+	border-top-right-radius: 50px;
+	animation: fadeIn 0.9s ease both 0.2s;
 }
 
+/* Groupe grille + photo â€” ils bougent ensemble */
+.hero__photo-group {
+	position: relative;
+	width: 400px;
+	height: 480px;
+	margin-left: auto;
+}
+
+/* Grille positionnÃ©e par rapport au group */
 .hero__grid {
 	position: absolute;
-	top: 20;
-	left: 140px;
-	width: 400px;
-	height: 400px;
-	object-fit: cover;
+	top: 20px;
+	left: -60px;
+	width: 401px;
+	height: 401px;
+	background-image:
+		linear-gradient(rgb(250, 235, 215) 1px, transparent 1px),
+		linear-gradient(90deg, rgb(250, 235, 215) 1px, transparent 1px);
+	background-size: 40px 40px;
 	z-index: 0;
 }
 
+/* Photo positionnÃ©e par rapport au group */
 .hero__photo {
-	position: relative;
-	top: 80px;
-	left: 80px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 	width: 400px;
 	height: 400px;
 	object-fit: cover;
 	object-position: center top;
 	z-index: 1;
-	filter: grayscale(100%);
+	transition: filter 0.4s ease;
 }
 
-.hero__photo-wrap:hover .hero__photo {
-	filter: grayscale(0%);
-}
-
+/* Badge */
 .hero__badge {
 	position: absolute;
-	bottom: 400px;
-	left: 180px;
+	bottom: 100px;
+	left: -100px;
 	background: var(--second-color);
 	backdrop-filter: blur(8px);
 	padding: 10px 16px;
@@ -149,21 +168,22 @@
 .hero__badge-school {
 	font-size: 11px;
 	font-weight: 500;
-	color: var(--text-color-muted);
+	color: var(--text-color-one);
 }
 
 .hero__badge-year {
 	font-size: 11px;
-	color: var(--text-color);
+	color: var(--text-dark);
 }
 
-/* Ticker bar */
+/* â”€â”€ Ticker bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .hero__ticker {
 	grid-column: 1 / -1;
 	display: flex;
 	gap: 0;
 	overflow: hidden;
-	border-top: 1px solid var(--text-color);
+	border-top: 1px solid var(--text-color-one);
+	border-bottom: 1px solid var(--text-color-one);
 	padding: 12px 0;
 	white-space: nowrap;
 }
@@ -172,7 +192,7 @@
 	display: inline-block;
 	font-size: 12px;
 	padding: 0 40px;
-	border-right: 1px solid var(--text-color);
+	border-right: 1px solid var(--text-color-one);
 	animation: ticker 18s linear infinite;
 	flex-shrink: 0;
 }
@@ -186,7 +206,7 @@
 	}
 }
 
-/* ── Entrance animations ──────────────────── */
+/* â”€â”€ Entrance animations â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @keyframes fadeUp {
 	from {
 		opacity: 0;

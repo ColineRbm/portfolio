@@ -22,7 +22,7 @@
 	font-size: 11px;
 	font-weight: 500;
 	letter-spacing: 0.1em;
-	color: #c4c1bb;
+	color: var(--text-color-two);
 	transition: var(--transition);
 }
 
@@ -63,57 +63,53 @@
 	gap: 12px;
 	margin-top: 4px;
 	padding-top: 12px;
-	border-top: 1px solid #e8e6e1;
+	border-top: 1px solid #fdf0ed;
 }
 
 .project-card__link {
 	font-size: 12px;
 	font-weight: 500;
-	color: #8a8780;
+	color: var(--text-color-one);
 	transition: var(--transition);
 }
 
-.project-card__link--live {
-	color: #1a1917;
-}
-
 .project-card__link:hover {
-	color: #e8715a;
+	color: var(--text-color-two);
 }
 
 /* ── Hover carte normale ──────────────────── */
 .project-card:hover {
 	background: #fdf0ed;
-	border-color: #f5c5ba;
+	border-color: var(--text-color-two);
 	box-shadow: 0 8px 28px rgba(232, 113, 90, 0.14);
 	transform: translateY(-3px);
 }
 
 .project-card:hover .project-card__number {
-	color: #e8715a;
+	color: var(--text-color-two);
 }
 
 /* ── Featured — styles de base ────────────── */
 .project-card--featured {
 	grid-row: span 2;
-	background: #e8715a;
-	border-color: white;
+	background: var(--text-color-two);
+	border-color: var(--text-color-two);
 }
 
 .project-card--featured .project-card__number {
-	color: darkblue;
+	color: var(--text-color-one);
 }
 
 .project-card--featured .project-card__title {
-	color: white;
+	color: var(--text-white);
 }
 
 .project-card--featured .project-card__desc {
-	color: whitesmoke;
+	color: var(--text-white);
 }
 
 .project-card--featured .project-card__links {
-	border-top-color: #4a4845;
+	border-top-color: var(--text-white);
 }
 
 .project-card--featured .project-card__link--live {
@@ -122,10 +118,19 @@
 
 /* ── Featured — hover ─────────────────────── */
 .project-card--featured:hover {
-	background: rgba(93, 0, 255, 0.764);
-	border-color: #e8715a;
+	background: var(--text-color-one);
+	border-color: var(--text-color-one);
 }
 
 .project-card--featured:hover .project-card__number {
-	color: #e8715a;
+	color: var(--text-color-two);
+}
+
+.project-card--featured:hover .project-card__link {
+	color: var(--text-white);
+}
+
+.project-card--featured:hover .tag {
+	color: var(--text-color-two);
+	border-color: var(--text-white);
 }

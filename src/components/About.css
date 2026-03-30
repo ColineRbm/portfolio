@@ -1,3 +1,7 @@
+.background {
+	background-color: var(--text-color-one);
+}
+
 .about {
 	display: grid;
 	grid-template-columns: 1fr 1.4fr;

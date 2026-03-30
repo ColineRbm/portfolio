@@ -8,7 +8,7 @@ const projects = [
 		description:
 			"Ce portfolio — construit avec React, TypeScript et Vite. Design blanc/crème, hover corail, composants réutilisables et code propre.",
 		techs: ["React", "TypeScript", "Vite", "CSS"],
-		githubUrl: "https://github.com/ton-pseudo/portfolio",
+		githubUrl: "https://github.com/ColineRbm/portfolio",
 		liveUrl: "#",
 		featured: true,
 	},

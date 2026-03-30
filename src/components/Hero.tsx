@@ -1,6 +1,5 @@
 import "./Hero.css";
-import grille from "../assets/grille-transparente.png";
-import coline from "../assets/coline.png";
+import profil from "../assets/coline.png";
 
 function Hero() {
 	const tags = ["React", "TypeScript", "Node.js", "Python", "IA"];
@@ -28,7 +27,9 @@ function Hero() {
 				<div className="bubble-top">
 					<h1 className="hero__name">Coline</h1>
 					<p className="hero__tagline">
-						La rigueur de la finance, la créativité du code.
+						Profil hybride : background finance (9ans)
+						<br />
+						"comprendre le métier, construire la solution"
 					</p>
 				</div>
 
@@ -52,15 +53,17 @@ function Hero() {
 
 			{/* Right column — photo */}
 			<div className="hero__photo-wrap">
-				<img src={grille} alt="" className="hero__grid" aria-hidden="true" />
-				<img
-					src={coline}
-					alt="Coline Rabemihoatra, développeuse full stack"
-					className="hero__photo"
-				/>
-				<div className="hero__badge">
-					<span className="hero__badge-school">Wild Code School</span>
-					<span className="hero__badge-year">Promo 2026</span>
+				<div className="hero__photo-group">
+					<div className="hero__grid" />
+					<img
+						src={profil}
+						alt="Coline Rousseau, développeuse full stack"
+						className="hero__photo"
+					/>
+					<div className="hero__badge">
+						<span className="hero__badge-school">Wild Code School</span>
+						<span className="hero__badge-year">Promo 2026</span>
+					</div>
 				</div>
 			</div>
 

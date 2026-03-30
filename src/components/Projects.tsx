@@ -6,36 +6,36 @@ const projects = [
 		number: "01",
 		title: "Portfolio personnel",
 		description:
-			"Ce portfolio — construit avec React, TypeScript et Vite. Design blanc/crème, hover corail, composants réutilisables et code propre.",
+			"Ce Portfolio développé avec React, TypeScript et Vite. Architecture modulaire, composants réutilisables et design épuré pensé pour une expérience fluide et moderne.",
 		techs: ["React", "TypeScript", "Vite", "CSS"],
-		githubUrl: "https://github.com/ton-pseudo/portfolio",
-		liveUrl: "#",
+		githubUrl: "https://github.com/ColineRbm",
+		liveUrl: "https://github.com/ColineRbm/portfolio",
 		featured: true,
 	},
 	{
 		number: "02",
-		title: "Page vitrine HTML/CSS",
+		title: "Kapsul",
 		description:
-			"Premier projet front — mise en page responsive, flexbox, variables CSS et animation au scroll.",
-		techs: ["HTML", "CSS", "JavaScript"],
-		githubUrl: "https://github.com/ton-pseudo/projet-html",
-		featured: false,
+			"App. de gestion de budget personnel permettant de suivre ses transactions, visualiser ses dépenses et analyser son solde en temps réel. Interface responsive avec stockage local, graphiques dynamiques et expérience utilisateur fluide.",
+		techs: ["HTML", "CSS", "JavaScript", "Chart.js"],
+		githubUrl: "https://github.com/ColineRbm",
+		liveUrl: "https://github.com/ColineRbm/Kapsul",
+		featured: true,
 	},
 	{
 		number: "03",
-		title: "Projet React",
-		description:
-			"Application React avec composants, props, state et appel à une API publique.",
-		techs: ["React", "JavaScript", "API REST"],
-		githubUrl: "https://github.com/ton-pseudo/projet-react",
+		title: "Projet",
+		description: "à venir",
+		techs: ["//"],
+		githubUrl: "https://github.com/ColineRbm",
 		featured: false,
 	},
 	{
 		number: "04",
-		title: "Projet à venir",
-		description:
-			"En cours de construction — Node.js, Express et base de données.",
-		techs: ["Node.js", "Express", "SQL"],
+		title: "Projet",
+		description: "à venir",
+		techs: ["//"],
+		githubUrl: "https://github.com/ColineRbm",
 		featured: false,
 	},
 ];
@@ -44,7 +44,7 @@ export default function Projects() {
 	return (
 		<section className="projects" id="projects">
 			<div className="projects__header">
-				<p className="section-label">Projets sélectionnés</p>
+				<p className="section-label tab">Projets</p>
 				<span className="projects__count">{projects.length} projets</span>
 			</div>
 

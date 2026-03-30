@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IE:wght@100..400&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nabla&family=Nova+Mono&family=Playwrite+IE:wght@100..400&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Fascinate&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
 	margin: 0;
 	padding: 0;
@@ -8,22 +6,26 @@
 }
 
 :root {
-	--bg-color: #f8f5f0;
-	--second-color: #ffffff;
-	--text-color: #03252c;
-	--text-color-muted: #427180;
-	--font-title: "Delius Swash Caps", cursive;
-	--font-nav: "Nova Mono", monospace;
-	--font-main:
-		"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--bg-color: #fef9ee;
+	--second-color: #fefefe;
+	--text-dark: #03252c;
+	--text-white: antiquewhite;
+	--text-color-one: #292e66;
+	--text-color-two: #db4652;
+	--text-color-three: #58a89d;
+	--text-color-four: #e27238;
+	--font-main: "Bricolage Grotesque", sans-serif;
+	--font-first: "Poppins", sans-serif;
+	--font-second: "Limelight", sans-serif;
+	--font-third: "Fascinate", system-ui;
+
 	--transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
 	font-family: var(--font-main);
 	background-color: var(--bg-color);
-	color: var(--text-color);
+	color: var(--text-dark);
 	line-height: 1.5;
 }
 
@@ -36,4 +38,10 @@ button {
 	font-family: inherit;
 	cursor: pointer;
 	border: none;
+}
+
+.section-label.tab {
+	font-family: var(--font-first);
+	font-size: 30px;
+	margin-bottom: 20px;
 }

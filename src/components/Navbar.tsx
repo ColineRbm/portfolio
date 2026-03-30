@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logo from "../assets/logo.png";
 import "./Navbar.css";
 
 function Navbar() {
@@ -14,7 +15,7 @@ function Navbar() {
 	return (
 		<header className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
 			<a href="#hero" className="navbar__logo">
-				Logo
+				<img src={logo} alt="Logo Coline" />
 			</a>
 			<nav className="navbar__links">
 				<a href="#projects">PROJETS</a>
@@ -24,7 +25,7 @@ function Navbar() {
 			</nav>
 			<div className="navbar__status">
 				<span className="navbar__dot" />
-				Disponible — Sept. 2026
+				Dispo: Sept. 2026
 			</div>
 		</header>
 	);

@@ -195,6 +195,7 @@
 .hero__ticker-item:not(:last-child) {
 	border-right: 1px solid var(--text-color-one);
 }
+
 .hero__ticker-item svg {
 	transform: translateY(2px);
 }
@@ -213,6 +214,20 @@
 	.hero__photo-wrap {
 		padding: 60px 80px;
 		border-radius: 0;
+		margin-top: -1px;
+	}
+
+	.hero__content {
+		padding: 60px 80px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.hero__photo-wrap {
+		padding: 60px 80px;
+		border-radius: 0;
 	}
 
 	.hero__photo-group {
@@ -221,6 +236,12 @@
 
 	.hero__grid {
 		left: -20px;
+	}
+
+	.hero__ticker-item {
+		display: inline-block;
+		font-size: 8px;
+		padding: 0 40px;
 	}
 }
 
@@ -236,7 +257,10 @@
 	/* ───── LEFT COLUMN (TEXT) ───── */
 	.hero__content {
 		padding: 40px 20px 30px;
-		border-top-left-radius: 0;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
 	}
 
 	.hero__eyebrow {
@@ -303,7 +327,7 @@
 
 	/* ❌ supprime les séparateurs */
 	.hero__ticker-item:not(:last-child) {
-		border-right: none !important;
+		border-right: none;
 	}
 
 	/* clean spacing */

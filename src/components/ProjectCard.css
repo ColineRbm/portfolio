@@ -132,6 +132,14 @@
 	border-color: var(--text-color-one);
 }
 
+.project-card--featured:hover .project-card__techs {
+	color: var(--text-color-two);
+}
+
+.project-card--featured:hover .project-card__link {
+	color: var(--text-white);
+}
+
 /* ─────────────────────────────
    TABLET
 ───────────────────────────── */
@@ -160,7 +168,7 @@
 ───────────────────────────── */
 @media (max-width: 768px) {
 	.projects-grid {
-		grid-template-columns: 1fr !important;
+		grid-template-columns: 1fr;
 		gap: 16px;
 		width: 100%;
 	}
@@ -200,6 +208,6 @@
 	}
 
 	.project-card--featured {
-		grid-row: auto !important;
+		grid-row: auto;
 	}
 }

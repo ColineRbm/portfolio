@@ -3,7 +3,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 100;
+	z-index: 1000;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -16,7 +16,6 @@
 
 .navbar--scrolled {
 	backdrop-filter: blur(12px);
-	border-bottom: 1px solid var(--text-color);
 }
 
 .navbar__logo {
@@ -46,13 +45,14 @@
 	left: 0;
 	width: 0;
 	height: 1px;
-	background: var(--text-color-muted);
+	background: var(--text-color-two);
 	transition: var(--transition);
 }
 
 .navbar__links a:hover {
-	color: var(--text-color-muted);
+	color: var(--text-color-two);
 }
+
 .navbar__links a:hover::after {
 	width: 100%;
 }
@@ -82,5 +82,128 @@
 	50% {
 		opacity: 0.5;
 		transform: scale(0.85);
+	}
+}
+
+/* ── Burger — caché par défaut ── */
+.navbar__burger {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	width: 36px;
+	height: 36px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+.navbar__burger span {
+	display: block;
+	width: 22px;
+	height: 2px;
+	background: var(--text-color-two);
+	border-radius: 2px;
+	transition:
+		transform 0.3s ease,
+		opacity 0.3s ease;
+	transform-origin: center;
+}
+
+.navbar__burger--active span:nth-child(1) {
+	transform: translateY(7px) rotate(45deg);
+}
+
+.navbar__burger--active span:nth-child(2) {
+	opacity: 0;
+	transform: scaleX(0);
+}
+
+.navbar__burger--active span:nth-child(3) {
+	transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Menu mobile — caché par défaut ── */
+.navbar__mobile-menu {
+	display: none;
+}
+
+/* ── Mobile uniquement ── */
+@media (max-width: 767px) {
+	.navbar {
+		padding: 0 20px;
+	}
+
+	.navbar__links,
+	.navbar__status {
+		display: none;
+	}
+
+	.navbar__burger {
+		display: flex;
+	}
+
+	.navbar__mobile-menu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 40px;
+		position: fixed;
+		top: 60px;
+		left: 0;
+		right: 0;
+		background: var(--second-color);
+		padding: 40px 0;
+		z-index: 999;
+		/* slide caché par défaut */
+		transform: translateY(-110%);
+		transition: transform 0.35s ease;
+	}
+
+	.navbar__mobile-menu--open {
+		transform: translateY(0);
+	}
+
+	.navbar__mobile-links {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 32px;
+	}
+
+	.navbar__mobile-links a {
+		font-size: 20px;
+		font-family: var(--font-second);
+		letter-spacing: 0.1em;
+		transition: var(--transition);
+		position: relative;
+	}
+
+	.navbar__mobile-links a::after {
+		content: "";
+		position: absolute;
+		bottom: -4px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 0;
+		height: 1px;
+		background: var(--text-color-two);
+		transition: var(--transition);
+	}
+
+	.navbar__mobile-links a:hover::after {
+		width: 100%;
+	}
+
+	.navbar__mobile-status {
+		display: flex;
+		align-items: center;
+		gap: 7px;
+		font-size: 14px;
+		font-family: var(--font-second);
+		opacity: 0.7;
 	}
 }

@@ -127,7 +127,6 @@
 		padding: 100px 80px 60px;
 	}
 
-	/* ❌ on supprime la colonne photo */
 	.about__photo-col {
 		display: none;
 	}
@@ -143,7 +142,6 @@
 		padding: 60px 20px 40px;
 	}
 
-	/* sécurité : on masque aussi ici */
 	.about__photo-col {
 		display: none;
 	}
@@ -161,10 +159,19 @@
 		line-height: 1.7;
 	}
 
-	/* timeline compacte */
+	/* icône cachée → 2 colonnes seulement : année + contenu */
+	.timeline-icon {
+		display: none;
+	}
+
 	.timeline-item {
-		grid-template-columns: 60px 1fr;
-		gap: 10px;
+		grid-template-columns: 50px 1fr;
+		gap: 8px;
+	}
+
+	/* empêche le contenu de rester coincé dans une colonne étroite */
+	.timeline-item__content {
+		min-width: 0;
 	}
 
 	.timeline-item__year {

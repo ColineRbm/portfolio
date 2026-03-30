@@ -25,7 +25,7 @@ function Navbar() {
 			</nav>
 			<div className="navbar__status">
 				<span className="navbar__dot" />
-				Disponible — Sept. 2026
+				Dispo: Sept. 2026
 			</div>
 		</header>
 	);

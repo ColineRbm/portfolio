@@ -1,3 +1,7 @@
+.background-color {
+	background: var(--second-color);
+}
+
 .contact {
 	padding: 80px 48px 40px;
 	max-width: 1100px;
@@ -13,10 +17,10 @@
 	border-bottom: 1px solid #e8e6e1;
 }
 
-/* ── Left ─────────────────────────────────── */
+/* Left column */
 .contact__title {
-	font-family: var(--font-nav);
-	font-size: clamp(32px, 4vw, 52px);
+	font-family: var(--font-second);
+	font-size: clamp(32px, 4vw, 42px);
 	font-weight: 400;
 	line-height: 1.1;
 	color: #1a1917;
@@ -35,7 +39,7 @@
 	max-width: 320px;
 }
 
-/* ── Right ────────────────────────────────── */
+/* Right column */
 .contact__right {
 	display: flex;
 	flex-direction: column;
@@ -47,10 +51,10 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 18px 24px;
-	background: white;
+	background: var(--text-white);
 	border: 1px solid #e8e6e1;
 	border-radius: 12px;
-	font-family: var(--font-nav);
+	font-family: var(--font-main);
 	font-size: 14px;
 	color: #4a4845;
 	cursor: pointer;
@@ -61,7 +65,7 @@
 .contact__email:hover {
 	background: #fdf0ed;
 	border-color: #f5c5ba;
-	color: #e8715a;
+	color: var(--text-color-two);
 }
 
 .contact__email-action {
@@ -70,7 +74,7 @@
 }
 
 .contact__email:hover .contact__email-action {
-	color: #e8715a;
+	color: var(--text-color-two);
 }
 
 .contact__links {
@@ -86,29 +90,29 @@
 	border-radius: 6px;
 	border: 1px solid #e8e6e1;
 	color: #4a4845;
-	background: white;
+	background: var(--text-white);
 	transition: var(--transition);
 }
 
 .contact__link:hover {
 	border-color: #f5c5ba;
-	color: #e8715a;
+	color: var(--text-color-two);
 	background: #fdf0ed;
 }
 
 .contact__link--primary {
-	background: #1a1917;
-	color: white;
-	border-color: #1a1917;
+	background: var(--text-dark);
+	color: var(--text-white);
+	border-color: var(--text-dark);
 }
 
 .contact__link--primary:hover {
-	background: #e8715a;
-	border-color: #e8715a;
-	color: white;
+	background: var(--text-color-two);
+	border-color: var(--text-color-two);
+	color: var(--text-white);
 }
 
-/* ── Footer ───────────────────────────────── */
+/* Footer */
 .contact__footer {
 	display: flex;
 	justify-content: space-between;

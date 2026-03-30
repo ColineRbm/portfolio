@@ -39,3 +39,9 @@ button {
 	cursor: pointer;
 	border: none;
 }
+
+.section-label.tab {
+	font-family: var(--font-first);
+	font-size: 30px;
+	margin-bottom: 20px;
+}

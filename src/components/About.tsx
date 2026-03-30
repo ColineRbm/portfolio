@@ -1,4 +1,4 @@
-import { Briefcase, Route, GraduationCap } from "lucide-react";
+import { Briefcase, GraduationCap, Route } from "lucide-react";
 import "./About.css";
 
 export default function About() {
@@ -12,7 +12,7 @@ export default function About() {
 				</div>
 
 				<div className="about__text-col">
-					<p className="section-label">À propos</p>
+					<p className="section-label tab">À propos</p>
 
 					<h2 className="about__title">
 						Hybride
@@ -21,14 +21,17 @@ export default function About() {
 					</h2>
 
 					<p className="about__desc">
-						Pendant 10 ans, j'ai analysé des données financières complexes dans
-						le secteur bancaire parisien. J'ai appris à communiquer avec
-						rigueur, à comprendre les systèmes et à livrer dans les délais.
+						Pendant 9 ans, j’ai évolué dans l’analyse de données financières au
+						sein du secteur bancaire. Cette expérience m’a permis de développer
+						une forte rigueur analytique, une compréhension fine des systèmes
+						complexes, ainsi qu’un sens aigu des délais et des exigences de
+						production.
 					</p>
 					<p className="about__desc">
-						Aujourd'hui je code — et cette expérience me différencie vraiment.
-						Je construis des interfaces avec la même exigence qu'un rapport
-						financier : propres, lisibles, et pensées pour l'utilisateur final.
+						Aujourd’hui, je me consacre au développement web. J’aborde le code
+						avec la même exigence : concevoir des interfaces claires,
+						structurées et maintenables, avec une attention particulière portée
+						à l’expérience utilisateur et à la qualité d’exécution.
 					</p>
 
 					<div className="about__timeline">
@@ -50,13 +53,13 @@ export default function About() {
 								<Briefcase size={18} />
 							</div>
 
-							<span className="timeline-item__year">2015–25</span>
+							<span className="timeline-item__year">2016–25</span>
 
 							<div className="timeline-item__content">
-								<strong>Analyste financière — secteur bancaire, Paris</strong>
+								<strong>Analyste — secteur bancaire, Paris</strong>
 								<p>
-									Modélisation, reporting, communication avec des équipes
-									pluridisciplinaires
+									Analyste financier, data analyst, chargée de mission, manager:
+									<br /> reporting, réglementation, modélisation, management.
 								</p>
 							</div>
 						</div>

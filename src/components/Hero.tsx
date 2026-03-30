@@ -1,3 +1,10 @@
+import {
+	ArrowUpFromLine,
+	Backpack,
+	GraduationCap,
+	House,
+	Landmark,
+} from "lucide-react";
 import "./Hero.css";
 import profil from "../assets/coline.png";
 
@@ -5,14 +12,31 @@ function Hero() {
 	const tags = ["React", "TypeScript", "Node.js", "Python", "IA"];
 
 	const tickerItems = [
-		{ id: 1, text: "📍 Lille, France" },
-		{ id: 2, text: "🎓 Wild Code School" },
-		{ id: 3, text: "⚡ React · Node · IA" },
-		{ id: 4, text: "💼 10 ans en finance bancaire" },
-		{ id: 5, text: "📍 Lille, France" },
-		{ id: 6, text: "🎓 Wild Code School" },
-		{ id: 7, text: "⚡ React · Node · IA" },
-		{ id: 8, text: "💼 10 ans en finance bancaire" },
+		{
+			id: 1,
+			icon: <House size={14} color="var(--text-color-two)" />,
+			text: " Lille, France",
+		},
+		{
+			id: 2,
+			icon: <GraduationCap size={14} color="var(--text-color-two)" />,
+			text: " Wild Code School",
+		},
+		{
+			id: 3,
+			icon: <ArrowUpFromLine size={14} color="var(--text-color-two)" />,
+			text: " 31 ans",
+		},
+		{
+			id: 4,
+			icon: <Landmark size={14} color="var(--text-color-two)" />,
+			text: " 9 ans en finance",
+		},
+		{
+			id: 5,
+			icon: <Backpack size={14} color="var(--text-color-two)" />,
+			text: " 4 mois d'Asie du Sud-Est en backpck en 2025",
+		},
 	];
 
 	return (
@@ -27,7 +51,7 @@ function Hero() {
 				<div className="bubble-top">
 					<h1 className="hero__name">Coline</h1>
 					<p className="hero__tagline">
-						Profil hybride : background finance (9ans)
+						Profil hybride : background finance
 						<br />
 						"comprendre le métier, construire la solution"
 					</p>
@@ -71,6 +95,7 @@ function Hero() {
 			<div className="hero__ticker">
 				{tickerItems.map((item) => (
 					<span key={item.id} className="hero__ticker-item">
+						{item.icon}
 						{item.text}
 					</span>
 				))}

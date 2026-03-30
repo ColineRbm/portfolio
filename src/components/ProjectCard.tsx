@@ -33,7 +33,7 @@ function ProjectCard({
 
 			<div className="project-card__techs">
 				{techs.map((t) => (
-					<span key={t} className="tag">
+					<span key={`${t}-${number}`} className="tag">
 						{t}
 					</span>
 				))}

@@ -10,13 +10,12 @@
 	background-color: var(--second-color);
 }
 
-/* left column */
+/* eft column */
 .hero__content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding: 60px 48px 40px 150px;
-	animation: fadeUp 0.7s ease both;
 	background-color: var(--text-color-one);
 	border-top-left-radius: 50px;
 }
@@ -60,7 +59,7 @@
 	color: var(--text-white);
 }
 
-/* â”€â”€ Buttons â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* Buttons */
 .hero__cta {
 	display: flex;
 	gap: 12px;
@@ -104,7 +103,7 @@
 	transform: translateY(-1px);
 }
 
-/* â”€â”€ Right column â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* Right column */
 .hero__photo-wrap {
 	position: relative;
 	display: flex;
@@ -113,10 +112,9 @@
 	padding: 60px 150px 40px 48px;
 	background-color: var(--text-color-one);
 	border-top-right-radius: 50px;
-	animation: fadeIn 0.9s ease both 0.2s;
 }
 
-/* Groupe grille + photo â€” ils bougent ensemble */
+/* Grille + photo */
 .hero__photo-group {
 	position: relative;
 	width: 400px;
@@ -124,7 +122,7 @@
 	margin-left: auto;
 }
 
-/* Grille positionnÃ©e par rapport au group */
+/* Grille */
 .hero__grid {
 	position: absolute;
 	top: 20px;
@@ -138,7 +136,7 @@
 	z-index: 0;
 }
 
-/* Photo positionnÃ©e par rapport au group */
+/* Photo */
 .hero__photo {
 	position: absolute;
 	bottom: 0;
@@ -173,56 +171,30 @@
 
 .hero__badge-year {
 	font-size: 11px;
-	color: var(--text-dark);
 }
 
-/* â”€â”€ Ticker bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* Ticker bar */
 .hero__ticker {
 	grid-column: 1 / -1;
 	display: flex;
 	gap: 0;
 	overflow: hidden;
-	border-top: 1px solid var(--text-color-one);
-	border-bottom: 1px solid var(--text-color-one);
+	border-bottom: 1px solid
+		color-mix(in srgb, var(--text-color-one) 20%, transparent);
 	padding: 12px 0;
 	white-space: nowrap;
+	justify-content: center;
 }
 
 .hero__ticker-item {
 	display: inline-block;
 	font-size: 12px;
 	padding: 0 40px;
+}
+
+.hero__ticker-item:not(:last-child) {
 	border-right: 1px solid var(--text-color-one);
-	animation: ticker 18s linear infinite;
-	flex-shrink: 0;
 }
-
-@keyframes ticker {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(-50%);
-	}
-}
-
-/* â”€â”€ Entrance animations â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-@keyframes fadeUp {
-	from {
-		opacity: 0;
-		transform: translateY(24px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+.hero__ticker-item svg {
+	transform: translateY(2px);
 }

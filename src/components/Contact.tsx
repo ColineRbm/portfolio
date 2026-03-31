@@ -57,7 +57,7 @@ export default function Contact() {
 								LinkedIn ↗
 							</a>
 							<a
-								href="/CV_Coline_Rabemihoatra.pdf"
+								href={`${import.meta.env.BASE_URL}CV_Coline_Rabemihoatra.pdf`}
 								target="_blank"
 								rel="noopener noreferrer"
 								className="contact__link contact__link--primary"

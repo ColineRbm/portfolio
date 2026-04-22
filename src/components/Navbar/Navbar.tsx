@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import logo from "../assets/logo.png";
+import logo from "../../assets/logo.png";
 import "./Navbar.css";
 
 function Navbar() {

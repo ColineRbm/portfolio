@@ -6,7 +6,7 @@ import {
 	Landmark,
 } from "lucide-react";
 import "./Hero.css";
-import profil from "../assets/coline.png";
+import profil from "../../assets/coline.png";
 
 function Hero() {
 	const tags = ["React", "TypeScript", "Node.js", "Python", "IA"];

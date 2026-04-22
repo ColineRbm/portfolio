@@ -1,4 +1,4 @@
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../ProjectCard/ProjectCard";
 import "./Projects.css";
 
 const projects = [
@@ -17,17 +17,19 @@ const projects = [
 		title: "Kapsul",
 		description:
 			"App. de gestion de budget personnel permettant de suivre ses transactions, visualiser ses dépenses et analyser son solde en temps réel. Interface responsive avec stockage local, graphiques dynamiques et expérience utilisateur fluide.",
-		techs: ["HTML", "CSS", "JavaScript", "Chart.js"],
+		techs: ["HTML", "CSS", "JavaScript (Vanilla)", "Chart.js"],
 		githubUrl: "https://github.com/ColineRbm",
 		liveUrl: "https://github.com/ColineRbm/Kapsul",
 		featured: true,
 	},
 	{
 		number: "03",
-		title: "Projet",
-		description: "à venir",
-		techs: ["//"],
+		title: "Spöt",
+		description:
+			"Application web de découverte de restaurants développée en React et TypeScript. Implémentation de filtres dynamiques (ville, préférences), intégration d’une API Express et gestion des interactions utilisateur (réservations de déjeuners entre inconnus).",
+		techs: ["React", "TypeScript", "Vite", "Biome", "API Express"],
 		githubUrl: "https://github.com/ColineRbm",
+		liveUrl: "https://github.com/ColineRbm/Spot",
 		featured: false,
 	},
 	{

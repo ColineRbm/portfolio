@@ -61,6 +61,13 @@ function Navbar() {
 								setMenuOpen(false);
 							}
 						}}
+						onKeyDown={(e) => {
+							if (e.key === "Enter" || e.key === " ") {
+								if ((e.target as HTMLElement).tagName === "A") {
+									setMenuOpen(false);
+								}
+							}
+						}}
 					>
 						<a href="#projects">PROJETS</a>
 						<a href="#about">À PROPOS</a>

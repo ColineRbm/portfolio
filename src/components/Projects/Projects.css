@@ -33,12 +33,12 @@
 	}
 
 	.projects__grid {
-		grid-template-columns: 1fr !important;
-		grid-template-rows: auto !important;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
 		gap: 16px;
 	}
 
 	.projects__grid > *:first-child {
-		grid-row: auto !important;
+		grid-row: auto;
 	}
 }

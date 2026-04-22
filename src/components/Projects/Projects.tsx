@@ -10,7 +10,7 @@ const projects = [
 		techs: ["React", "TypeScript", "Vite", "CSS"],
 		githubUrl: "https://github.com/ColineRbm",
 		liveUrl: "https://github.com/ColineRbm/portfolio",
-		featured: true,
+		featured: false,
 	},
 	{
 		number: "02",
@@ -20,7 +20,7 @@ const projects = [
 		techs: ["HTML", "CSS", "JavaScript (Vanilla)", "Chart.js"],
 		githubUrl: "https://github.com/ColineRbm",
 		liveUrl: "https://github.com/ColineRbm/Kapsul",
-		featured: true,
+		featured: false,
 	},
 	{
 		number: "03",
@@ -30,7 +30,7 @@ const projects = [
 		techs: ["React", "TypeScript", "Vite", "Biome", "API Express"],
 		githubUrl: "https://github.com/ColineRbm",
 		liveUrl: "https://github.com/ColineRbm/Spot",
-		featured: false,
+		featured: true,
 	},
 	{
 		number: "04",

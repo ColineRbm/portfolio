@@ -17,9 +17,11 @@ Profil hybride : comprendre le métier, construire la solution.
 
 ## 📸 Aperçu
 
-![Hero](./assets/presentation.png)
+![Hero](./src/assets/presentation.png)
 
-![Projets](./assets/projets.png)
+![Projets](./src/assets/projets.png)
+
+![About me](./src/assets/about_me.png)
 
 ---
 

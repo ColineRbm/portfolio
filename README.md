@@ -1,57 +1,60 @@
-# **🌐 Portfolio – Coline**
+# Portfolio – Coline 🐨
 
-Bienvenue sur mon portfolio de développeuse web 🚀
-Ce projet présente mes compétences, mes projets et mon parcours en développement web et mobile.
+**Développeuse full-stack | Profil hybride finance × tech**  
+Disponible en alternance à partir de septembre 2026.
 
-// ----------------------------------------------------------------------------------------------------------------------------------
+🔗 [colinerbm.github.io/portfolio](https://colinerbm.github.io/portfolio) · [github.com/ColineRbm](https://github.com/ColineRbm)
 
-# **✨ À propos**
+---
 
-Après 9 ans en analyse financière dans le secteur bancaire, j’ai décidé de me reconvertir dans le développement web.
-Je suis actuellement en formation intensive à la Wild Code School, avec une spécialisation en React, TypeScript et IA.
+## À propos
 
-**🛠️ Stack technique**
-Frontend : React, TypeScript
-Styling : CSS (modulaire / responsive)
-Build tool : Vite
-Icons : Lucide React
-Versionning : Git / GitHub
+Après 9 ans en analyse financière dans le secteur bancaire, je me suis reconvertie dans le développement web. Je suis actuellement en formation intensive à la Wild Code School (Lille), avec une spécialisation en React, TypeScript et IA.
 
-// ----------------------------------------------------------------------------------------------------------------------------------
+Profil hybride : comprendre le métier, construire la solution.
 
-# **📚 Objectifs du projet**
-Construire un portfolio professionnel
-Maîtriser React + TypeScript
-Appliquer les bonnes pratiques (clean code, composants, structure)
-Préparer une entrée en entreprise
+---
 
-**🎯 Fonctionnalités**
-Design responsive (mobile / desktop)
-Sections : Hero, About, Projects, Contact
-Composants réutilisables
-Animations CSS
-Icônes modernes (Lucide)
+## 📸 Aperçu
 
-// ----------------------------------------------------------------------------------------------------------------------------------
+![Hero](./assets/presentation.png)
 
-# 🚀 Lancer le projet en local
-**Cloner le repo**
-git clone <url-du-repo>
+![Projets](./assets/projets.png)
 
-**Aller dans le dossier**
+---
+
+## 🛠 Stack
+
+| Couche | Technologies |
+|---|---|
+| Frontend | React, TypeScript, JavaScript, HTML, CSS, Vite |
+| Outils | Git, GitHub, Biome, VS Code |
+
+---
+
+## 📚 Structure du projet
+
+- **Hero** — présentation et accès rapide aux projets / contact
+- **Projets** — carte par projet avec stack, liens GitHub et démo
+- **À propos** — parcours et reconversion
+- **Skills** — stack organisée par catégorie
+- **Contact** — email, GitHub, LinkedIn, téléchargement CV
+
+---
+
+## 🚀 Lancer en local
+
+```bash
+git clone https://github.com/ColineRbm/portfolio.git
 cd portfolio
-
-**Installer les dépendances**
 npm install
-
-**Lancer le serveur**
 npm run dev
+```
 
-// ----------------------------------------------------------------------------------------------------------------------------------
+---
 
-# **🔮 Améliorations futures**
-> Ajout des projets futurs
-> Animations avancées
-> Utilisation de Router React
-> Connexion à une API (projets dynamiques)
+## 🔮 Améliorations prévues
 
+- Ajout des projets à venir
+- Animations avancées
+- Connexion à une API (projets dynamiques)

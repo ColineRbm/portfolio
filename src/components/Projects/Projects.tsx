@@ -20,7 +20,7 @@ const projects = [
 		techs: ["HTML", "CSS", "JavaScript", "Chart.js"],
 		githubUrl: "https://github.com/ColineRbm/Kapsul",
 		liveUrl: "https://github.com/ColineRbm/Kapsul",
-		featured: false,
+		featured: true,
 	},
 	{
 		number: "03",

@@ -18,13 +18,13 @@
 
 .projects__grid {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto auto;
 	gap: 16px;
 }
 
 .projects__grid > *:first-child {
-	grid-row: span 2;
+	grid-column: span 3;
 }
 
 @media (max-width: 768px) {
@@ -34,11 +34,9 @@
 
 	.projects__grid {
 		grid-template-columns: 1fr;
-		grid-template-rows: auto;
-		gap: 16px;
 	}
 
 	.projects__grid > *:first-child {
-		grid-row: auto;
+		grid-column: span 1;
 	}
 }

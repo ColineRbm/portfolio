@@ -26,7 +26,7 @@ const projects = [
 		number: "03",
 		title: "ERA",
 		description:
-			"Hackathon 48h — application de voyage historique. Développement du composant Timeline avec theming HSL dynamique par ère et gestion des états past/active/future.",
+			"Hackathon 48h — application de voyage historique. Développement du composant Timeline avec gestion des états.",
 		techs: ["React", "TypeScript", "Vite", "CSS"],
 		githubUrl: "https://github.com/ColineRbm/ERA",
 		liveUrl: "https://github.com/ColineRbm/ERA",
@@ -35,8 +35,7 @@ const projects = [
 	{
 		number: "04",
 		title: "TeamUp",
-		description:
-			"Application pour trouver des partenaires sportifs. Développement de la page profil et des composants RecentActivity et Skills.",
+		description: "Application pour trouver des partenaires sportifs.",
 		techs: ["React", "TypeScript", "Node.js", "MySQL"],
 		githubUrl: "https://github.com/ColineRbm/TeamUp-front",
 		liveUrl: "https://github.com/ColineRbm/TeamUp-front",

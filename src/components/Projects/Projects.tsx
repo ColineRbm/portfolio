@@ -4,13 +4,13 @@ import "./Projects.css";
 const projects = [
 	{
 		number: "01",
-		title: "Portfolio personnel",
+		title: "WanderMind",
 		description:
-			"Portfolio développé avec React, TypeScript et Vite. Architecture modulaire, composants réutilisables et design épuré pensé pour une expérience fluide et moderne.",
-		techs: ["React", "TypeScript", "Vite", "CSS"],
-		githubUrl: "https://github.com/ColineRbm/portfolio",
-		liveUrl: "https://colinerbm.github.io/portfolio/",
-		featured: false,
+			"Application web full-stack de conseiller voyage intelligent. L'utilisateur choisit son profil de voyageur (backpacker, luxe, famille, aventure) et obtient des recommandations personnalisées grâce au prompt engineering et à une IA conversationnelle avec mémoire de session.",
+		techs: ["Python", "Flask", "React", "Groq API", "LLaMA 3.3"],
+		githubUrl: "https://github.com/ColineRbm/wandermind",
+		liveUrl: "https://wandermind-h1ug.onrender.com",
+		featured: true,
 	},
 	{
 		number: "02",
@@ -20,7 +20,7 @@ const projects = [
 		techs: ["HTML", "CSS", "JavaScript", "Chart.js"],
 		githubUrl: "https://github.com/ColineRbm/Kapsul",
 		liveUrl: "https://github.com/ColineRbm/Kapsul",
-		featured: true,
+		featured: false,
 	},
 	{
 		number: "03",
@@ -39,7 +39,7 @@ const projects = [
 		techs: ["React", "TypeScript", "Node.js", "MySQL"],
 		githubUrl: "https://github.com/ColineRbm/TeamUp-front",
 		liveUrl: "https://github.com/ColineRbm/TeamUp-front",
-		featured: true,
+		featured: false,
 	},
 ];
 

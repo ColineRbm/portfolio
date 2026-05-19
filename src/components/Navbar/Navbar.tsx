@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+import { ArrowUp } from "lucide-react";
 import logo from "../../assets/logo.png";
 import "./Navbar.css";
 
@@ -20,6 +21,10 @@ function Navbar() {
 		};
 	}, [menuOpen]);
 
+	const scrollToTop = () => {
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	};
+
 	return (
 		<header className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
 			<a href="#hero" className="navbar__logo">
@@ -33,10 +38,14 @@ function Navbar() {
 				<a href="#contact">CONTACT</a>
 			</nav>
 
-			<div className="navbar__status">
-				<span className="navbar__dot" />
-				Dispo: Sept. 2026
-			</div>
+			<button
+				type="button"
+				className="navbar__top"
+				onClick={scrollToTop}
+				aria-label="Retour en haut"
+			>
+				<ArrowUp size={14} />
+			</button>
 
 			<button
 				className={`navbar__burger ${menuOpen ? "navbar__burger--active" : ""}`}

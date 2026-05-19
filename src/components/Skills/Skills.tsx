@@ -9,7 +9,7 @@ const skillGroups = [
 	},
 	{
 		category: "Backend",
-		skills: ["Node.js", "Express", "API REST", "SQL", "Python | autodidacte"],
+		skills: ["Node.js", "Express", "API REST", "SQL", "Python"],
 		learning: false,
 	},
 	{
@@ -24,13 +24,7 @@ const skillGroups = [
 	},
 	{
 		category: "Finance & Data",
-		skills: [
-			"Agilité",
-			"Reporting",
-			"Analyse de données",
-			"Excel",
-			"Modélisation",
-		],
+		skills: ["Reporting", "Analyse de données", "Excel", "Modélisation"],
 		learning: false,
 	},
 ];
@@ -38,10 +32,9 @@ const skillGroups = [
 export default function Skills() {
 	return (
 		<section className="skills" id="skills">
-			<div className="skills__text-col">
+			<div className="skills__content">
 				<div className="skills__header">
-					<p className="section-label tab">Skills</p>
-					<h2 className="skills__title">Stack</h2>
+					<p className="skills__label">Stack</p>
 				</div>
 
 				<div className="skills__list">
@@ -64,7 +57,7 @@ export default function Skills() {
 			</div>
 
 			<div className="skills__icon-col">
-				<Code size={400} className="icon-code" />
+				<Code size={340} className="skills__icon" />
 			</div>
 		</section>
 	);

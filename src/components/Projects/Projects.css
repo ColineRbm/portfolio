@@ -1,42 +1,92 @@
 .projects {
-	padding: 80px 48px;
-	max-width: 1100px;
-	margin: 0 auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 56px 0 48px;
+	background: var(--bg);
+	overflow: hidden;
 }
 
 .projects__header {
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
+	padding: 0 40px;
 	margin-bottom: 28px;
 }
 
-.projects__count {
+.projects__label {
+	font-size: 9px;
+	letter-spacing: 0.18em;
+	color: var(--text-muted);
+	text-transform: uppercase;
+}
+
+.projects__nav {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.projects__counter {
 	font-size: 12px;
-	color: #c4c1bb;
+	color: var(--text-muted);
+	min-width: 40px;
 }
 
-.projects__grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto auto;
+.projects__arr {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	border: 1px solid var(--border);
+	background: transparent;
+	cursor: pointer;
+	font-size: 12px;
+	color: var(--text);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: var(--transition);
+}
+
+.projects__arr:hover {
+	background: var(--bg-dark);
+	color: var(--white);
+	border-color: var(--bg-dark);
+}
+
+.projects__carousel-wrap {
+	overflow: hidden;
+	padding: 16px 0 20px;
+}
+
+.projects__track {
+	display: flex;
 	gap: 16px;
+	transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	will-change: transform;
 }
 
-.projects__grid > *:first-child {
-	grid-column: span 3;
+.projects__dots {
+	display: flex;
+	gap: 5px;
+	justify-content: center;
+	margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-	.projects {
-		padding: 60px 20px;
-	}
+.projects__dot {
+	height: 4px;
+	width: 4px;
+	border-radius: 2px;
+	background: var(--border);
+	border: none;
+	cursor: pointer;
+	transition: var(--transition);
+	padding: 0;
+}
 
-	.projects__grid {
-		grid-template-columns: 1fr;
-	}
-
-	.projects__grid > *:first-child {
-		grid-column: span 1;
-	}
+.projects__dot--active {
+	background: var(--bg-dark);
+	width: 18px;
 }

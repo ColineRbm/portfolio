@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Fascinate&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@700;800&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,26 +7,28 @@
 }
 
 :root {
-	--bg-color: #fef9ee;
-	--second-color: #fefefe;
-	--text-dark: #03252c;
-	--text-white: antiquewhite;
-	--text-color-one: #292e66;
-	--text-color-two: #db4652;
-	--text-color-three: #58a89d;
-	--text-color-four: #e27238;
-	--font-main: "Bricolage Grotesque", sans-serif;
-	--font-first: "Poppins", sans-serif;
-	--font-second: "Limelight", sans-serif;
-	--font-third: "Fascinate", system-ui;
-
+	--bg: #eef6f9;
+	--bg-dark: #0d1f2d;
+	--blue-light: #7cc8dc;
+	--blue-mid: #4aa8c4;
+	--white: #ffffff;
+	--text: #102c41c7;
+	--text-muted: rgba(13, 31, 45, 0.5);
+	--text-white: #ffffff;
+	--text-white-muted: rgba(255, 255, 255, 0.45);
+	--border: rgba(13, 31, 45, 0.08);
+	--border-white: rgba(255, 255, 255, 0.15);
+	--glass: rgba(255, 255, 255, 0.45);
+	--glass-border: rgba(255, 255, 255, 0.75);
+	--font-main: "Inter", sans-serif;
+	--font-display: "Syne", sans-serif;
 	--transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
 	font-family: var(--font-main);
-	background-color: var(--bg-color);
-	color: var(--text-dark);
+	background-color: var(--bg);
+	color: var(--text);
 	line-height: 1.5;
 }
 
@@ -38,10 +41,4 @@ button {
 	font-family: inherit;
 	cursor: pointer;
 	border: none;
-}
-
-.section-label.tab {
-	font-family: var(--font-first);
-	font-size: 30px;
-	margin-bottom: 20px;
 }

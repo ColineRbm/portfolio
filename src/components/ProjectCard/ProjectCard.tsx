@@ -8,6 +8,8 @@ interface ProjectCardProps {
 	githubUrl?: string;
 	liveUrl?: string;
 	featured?: boolean;
+	position: "center" | "side" | "far";
+	onClick: () => void;
 }
 
 function ProjectCard({
@@ -18,48 +20,57 @@ function ProjectCard({
 	githubUrl,
 	liveUrl,
 	featured = false,
+	position,
+	onClick,
 }: ProjectCardProps) {
 	return (
 		<article
-			className={`project-card ${featured ? "project-card--featured" : ""}`}
+			className={`pcard pcard--${position}`}
+			onClick={onClick}
+			onKeyDown={(e) => {
+				if (e.key === "Enter") onClick();
+			}}
 		>
-			<div className="project-card__header">
-				<span className="project-card__number">{number}</span>
-				{featured && <span className="project-card__badge">Featured</span>}
+			<div className="pcard__top">
+				<div className="pcard__num">{number}</div>
+				<div>
+					<h3 className="pcard__title">{title}</h3>
+					<p className="pcard__desc">{description}</p>
+					<div className="pcard__techs">
+						{techs.map((t) => (
+							<span key={t} className="pcard__tech">
+								{t}
+							</span>
+						))}
+					</div>
+				</div>
 			</div>
-
-			<h3 className="project-card__title">{title}</h3>
-			<p className="project-card__desc">{description}</p>
-
-			<div className="project-card__techs">
-				{techs.map((t) => (
-					<span key={`${t}-${number}`} className="tag">
-						{t}
-					</span>
-				))}
-			</div>
-
-			<div className="project-card__links">
-				{githubUrl && (
-					<a
-						href={githubUrl}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="project-card__link"
-					>
-						GitHub ↗
-					</a>
-				)}
-				{liveUrl && (
-					<a
-						href={liveUrl}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="project-card__link project-card__link--live"
-					>
-						Voir le site ↗
-					</a>
-				)}
+			<div className="pcard__bot">
+				<div className="pcard__links">
+					{githubUrl && (
+						<a
+							href={githubUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="pcard__link"
+							onClick={(e) => e.stopPropagation()}
+						>
+							GitHub ↗
+						</a>
+					)}
+					{liveUrl && (
+						<a
+							href={liveUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="pcard__link pcard__link--live"
+							onClick={(e) => e.stopPropagation()}
+						>
+							Voir ↗
+						</a>
+					)}
+				</div>
+				{featured && <span className="pcard__badge">Featured</span>}
 			</div>
 		</article>
 	);

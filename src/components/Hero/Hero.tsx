@@ -1,104 +1,73 @@
-import {
-	ArrowUpFromLine,
-	Backpack,
-	GraduationCap,
-	House,
-	Landmark,
-} from "lucide-react";
 import "./Hero.css";
-import profil from "../../assets/coline.png";
+import profil from "../../assets/bg_portfolio.png";
 
 function Hero() {
-	const tags = ["React", "TypeScript", "Node.js", "Python", "IA"];
-
-	const tickerItems = [
-		{
-			id: 1,
-			icon: <House size={14} color="var(--text-color-two)" />,
-			text: " Lille, France",
-		},
-		{
-			id: 2,
-			icon: <GraduationCap size={14} color="var(--text-color-two)" />,
-			text: " Wild Code School",
-		},
-		{
-			id: 3,
-			icon: <ArrowUpFromLine size={14} color="var(--text-color-two)" />,
-			text: " 31 ans",
-		},
-		{
-			id: 4,
-			icon: <Landmark size={14} color="var(--text-color-two)" />,
-			text: " 9 ans en finance",
-		},
-		{
-			id: 5,
-			icon: <Backpack size={14} color="var(--text-color-two)" />,
-			text: " 4 mois d'Asie du Sud-Est en backpack, 2025",
-		},
-	];
+	const tags = ["React", "TypeScript", "Node.js", "Python", "IA", "SQL"];
 
 	return (
 		<section className="hero" id="hero">
-			{/* Left column — text */}
-			<div className="hero__content">
-				<p className="section-label hero__eyebrow">
-					développeuse
-					<br />
-					full stack
-				</p>
-				<div className="bubble-top">
-					<h1 className="hero__name">Coline</h1>
-					<p className="hero__tagline">
-						Profil hybride : background finance
+			<div className="hero__glow hero__glow--1" />
+			<div className="hero__glow hero__glow--2" />
+			<div className="hero__glow hero__glow--3" />
+
+			<span className="hero__deco" style={{ top: "22%", left: "6%" }}>
+				+
+			</span>
+			<span className="hero__deco" style={{ top: "18%", right: "9%" }}>
+				+
+			</span>
+			<span className="hero__deco" style={{ bottom: "26%", left: "11%" }}>
+				○
+			</span>
+			<span className="hero__deco" style={{ bottom: "30%", right: "7%" }}>
+				+
+			</span>
+
+			<div className="hero__top">
+				<div className="hero__top-left">
+					<span className="hero__eyebrow">Lille, France · 2026</span>
+					<h1 className="hero__title">
+						Développeuse
 						<br />
-						"comprendre le métier, construire la solution"
+						full stack
+					</h1>
+				</div>
+				<div className="hero__top-right">
+					<div className="hero__pill">
+						<span className="hero__pill-dot" />
+						Dispo · Alternance sept. 2026
+					</div>
+					<p className="hero__desc">
+						9 ans en analyse financière —<br />
+						construire la solution avec une vision métier.
 					</p>
 				</div>
+			</div>
 
+			<div className="hero__img-wrap">
+				<img
+					src={profil}
+					alt="Illustration développeuse full stack"
+					className="hero__img"
+				/>
+			</div>
+
+			<div className="hero__bottom">
+				<div className="hero__cta">
+					<a href="#projects" className="btn btn--dark">
+						Projets <span className="btn__arrow">↗</span>
+					</a>
+					<a href="#contact" className="btn btn--glass">
+						Contact
+					</a>
+				</div>
 				<div className="hero__tags">
 					{tags.map((tag) => (
-						<span key={tag} className="tag">
+						<span key={tag} className="hero__tag">
 							{tag}
 						</span>
 					))}
 				</div>
-
-				<div className="hero__cta">
-					<a href="#projects" className="btn btn--primary">
-						Voir mes projets
-					</a>
-					<a href="#contact" className="btn btn--ghost">
-						Me contacter
-					</a>
-				</div>
-			</div>
-
-			{/* Right column — photo */}
-			<div className="hero__photo-wrap">
-				<div className="hero__photo-group">
-					<div className="hero__grid" />
-					<img
-						src={profil}
-						alt="Coline Rousseau, développeuse full stack"
-						className="hero__photo"
-					/>
-					<div className="hero__badge">
-						<span className="hero__badge-school">Wild Code School</span>
-						<span className="hero__badge-year">Promo 2026</span>
-					</div>
-				</div>
-			</div>
-
-			{/* Ticker bar */}
-			<div className="hero__ticker">
-				{tickerItems.map((item) => (
-					<span key={item.id} className="hero__ticker-item">
-						{item.icon}
-						{item.text}
-					</span>
-				))}
 			</div>
 		</section>
 	);

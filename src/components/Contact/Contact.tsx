@@ -68,8 +68,9 @@ export default function Contact() {
 			</div>
 
 			<footer className="contact__footer">
-				<span>© 2026 Coline Rabemihoatra</span>
-				<span>Fait avec React · TypeScript · Vite</span>
+				<span>
+					© 2026 Coline Rabemihoatra · Fait avec React · TypeScript · Vite
+				</span>
 			</footer>
 		</section>
 	);

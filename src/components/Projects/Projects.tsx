@@ -5,6 +5,16 @@ import "./Projects.css";
 const projects = [
 	{
 		number: "01",
+		title: "Portfolio",
+		description:
+			"Portfolio développeuse web — projets, stack technique et parcours. Déployé sur GitHub Pages.",
+		techs: ["React", "TypeScript", "CSS", "Vite"],
+		githubUrl: "https://github.com/ColineRbm/portfolio",
+		liveUrl: "https://ColineRbm.github.io/portfolio",
+		featured: false,
+	},
+	{
+		number: "02",
 		title: "WanderMind",
 		description:
 			"Conseiller voyage IA — profil voyageur + recommandations personnalisées via prompt engineering et LLaMA 3.3.",
@@ -14,33 +24,30 @@ const projects = [
 		featured: true,
 	},
 	{
-		number: "02",
+		number: "03",
 		title: "Kapsul",
 		description:
 			"App budget personnel — suivi transactions, graphiques dynamiques, stockage local.",
 		techs: ["HTML", "CSS", "JavaScript", "Chart.js"],
 		githubUrl: "https://github.com/ColineRbm/Kapsul",
-		liveUrl: "https://github.com/ColineRbm/Kapsul",
 		featured: false,
 	},
 	{
-		number: "03",
+		number: "04",
 		title: "ERA",
 		description:
-			"Hackathon 48h — app voyage historique. Timeline React avec états past/active/future.",
+			"Hackathon 48h — app voyage historique. Timeline avec gestion des états.",
 		techs: ["React", "TypeScript", "Vite", "CSS"],
 		githubUrl: "https://github.com/ColineRbm/ERA",
-		liveUrl: "https://github.com/ColineRbm/ERA",
 		featured: true,
 	},
 	{
-		number: "04",
+		number: "05",
 		title: "TeamUp",
 		description:
 			"Trouver des partenaires sportifs. Fullstack en équipe, MySQL, CSS Grid.",
 		techs: ["React", "TypeScript", "Node.js", "MySQL"],
 		githubUrl: "https://github.com/ColineRbm/TeamUp-front",
-		liveUrl: "https://github.com/ColineRbm/TeamUp-front",
 		featured: false,
 	},
 ];
@@ -106,10 +113,10 @@ export default function Projects() {
 			</div>
 
 			<div className="projects__dots">
-				{projects.map((_, i) => (
+				{projects.map((project, i) => (
 					<button
 						type="button"
-						key={i}
+						key={project.title}
 						className={`projects__dot ${i === cur ? "projects__dot--active" : ""}`}
 						onClick={() => setCur(i)}
 					/>

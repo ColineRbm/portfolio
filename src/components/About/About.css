@@ -8,6 +8,13 @@
 	align-items: center;
 }
 
+/* ── TOP (left + photo) — desktop : about__top n'est pas utilisé comme bloc,
+   la grille 3 colonnes place about__left | about__photo-col | about__right
+   On garde about__top transparent en desktop ── */
+.about__top {
+	display: contents;
+}
+
 /* ── PHOTO COL ── */
 .about__photo-col {
 	display: flex;
@@ -136,22 +143,46 @@
 @media (max-width: 1024px) {
 	.about {
 		grid-template-columns: 1fr;
-		gap: 48px;
+		gap: 40px;
 		padding: 64px 40px;
 	}
 
+	/* about__top redevient un vrai bloc flex-row :
+	   texte à gauche, petite photo à droite */
+	.about__top {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 20px;
+	}
+
 	.about__photo-col {
-		display: none;
+		flex-shrink: 0;
+		align-items: flex-start;
+		justify-content: flex-end;
+	}
+
+	.about__photo {
+		width: 80px;
+	}
+
+	/* about__right prend toute la largeur sous about__top */
+	.about__right {
+		width: 100%;
 	}
 }
 
 @media (max-width: 768px) {
 	.about {
 		padding: 48px 24px;
-		gap: 36px;
+		gap: 32px;
 	}
 
 	.about__title {
 		font-size: clamp(28px, 6vw, 38px);
+	}
+
+	.about__photo {
+		width: 64px;
 	}
 }

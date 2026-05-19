@@ -5,30 +5,32 @@ import profilImg from "../../assets/coline.png";
 export default function About() {
 	return (
 		<section className="about" id="about">
-			<div className="about__left">
-				<p className="about__label">À propos</p>
-				<h2 className="about__title">
-					Hybride
-					<br />
-					<em>business & tech</em>
-				</h2>
-				<p className="about__desc">
-					Pendant 9 ans, j'ai évolué dans l'analyse de données financières au
-					sein du secteur bancaire — rigueur analytique, systèmes complexes,
-					exigences de production.
-				</p>
-				<p className="about__desc">
-					Aujourd'hui, je construis des interfaces claires, structurées et
-					maintenables, avec la même exigence qu'en finance.
-				</p>
-			</div>
+			<div className="about__top">
+				<div className="about__left">
+					<p className="about__label">À propos</p>
+					<h2 className="about__title">
+						Hybride
+						<br />
+						<em>business & tech</em>
+					</h2>
+					<p className="about__desc">
+						Pendant 9 ans, j'ai évolué dans l'analyse de données financières au
+						sein du secteur bancaire — rigueur analytique, systèmes complexes,
+						exigences de production.
+					</p>
+					<p className="about__desc">
+						Aujourd'hui, je construis des interfaces claires, structurées et
+						maintenables, avec la même exigence qu'en finance.
+					</p>
+				</div>
 
-			<div className="about__photo-col">
-				<img
-					src={profilImg}
-					alt="Coline Rabemihoatra"
-					className="about__photo"
-				/>
+				<div className="about__photo-col">
+					<img
+						src={profilImg}
+						alt="Coline Rabemihoatra"
+						className="about__photo"
+					/>
+				</div>
 			</div>
 
 			<div className="about__right">

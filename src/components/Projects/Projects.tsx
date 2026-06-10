@@ -4,17 +4,25 @@ import "./Projects.css";
 
 const projects = [
 	{
-		number: "01",
-		title: "Portfolio",
+		number: "07",
+		title: "Octet",
 		description:
-			"Portfolio développeuse web — projets, stack technique et parcours. Déployé sur GitHub Pages.",
-		techs: ["React", "TypeScript", "CSS", "Vite"],
-		githubUrl: "https://github.com/ColineRbm/portfolio",
-		liveUrl: "https://ColineRbm.github.io/portfolio",
-		featured: false,
+			"App de gestion d'une ressourcerie numérique — collecte, diagnostic, réparation, redistribution de matériel informatique. Auth JWT + Argon2, deux rôles admin/bénévole.",
+		techs: ["React", "TypeScript", "Express", "MySQL", "MongoDB"],
+		githubUrl: "https://github.com/ColineRbm/octet",
+		featured: true,
 	},
 	{
-		number: "02",
+		number: "06",
+		title: "Le Local",
+		description:
+			"Gestion d'un tiers-lieu en équipe — réservation d'espaces, inscription à des événements, interface admin.",
+		techs: ["React", "TypeScript", "Express", "MySQL"],
+		githubUrl: "https://github.com/ColineRbm/le-local",
+		featured: true,
+	},
+	{
+		number: "05",
 		title: "WanderMind",
 		description:
 			"Conseiller voyage IA — profil voyageur + recommandations personnalisées via prompt engineering et LLaMA 3.3.",
@@ -24,7 +32,26 @@ const projects = [
 		featured: true,
 	},
 	{
+		number: "04",
+		title: "TeamUp",
+		description:
+			"Trouver des partenaires sportifs. Fullstack en équipe, MySQL, CSS Grid.",
+		techs: ["React", "TypeScript", "Node.js", "MySQL"],
+		githubUrl: "https://github.com/ColineRbm/TeamUp-front",
+		featured: false,
+	},
+
+	{
 		number: "03",
+		title: "ERA",
+		description:
+			"Hackathon 48h — app voyage historique. Timeline avec gestion des états.",
+		techs: ["React", "TypeScript", "Vite", "CSS"],
+		githubUrl: "https://github.com/ColineRbm/ERA",
+		featured: false,
+	},
+	{
+		number: "02",
 		title: "Kapsul",
 		description:
 			"App budget personnel — suivi transactions, graphiques dynamiques, stockage local.",
@@ -33,21 +60,13 @@ const projects = [
 		featured: false,
 	},
 	{
-		number: "04",
-		title: "ERA",
+		number: "01",
+		title: "Portfolio",
 		description:
-			"Hackathon 48h — app voyage historique. Timeline avec gestion des états.",
-		techs: ["React", "TypeScript", "Vite", "CSS"],
-		githubUrl: "https://github.com/ColineRbm/ERA",
-		featured: true,
-	},
-	{
-		number: "05",
-		title: "TeamUp",
-		description:
-			"Trouver des partenaires sportifs. Fullstack en équipe, MySQL, CSS Grid.",
-		techs: ["React", "TypeScript", "Node.js", "MySQL"],
-		githubUrl: "https://github.com/ColineRbm/TeamUp-front",
+			"Portfolio développeuse web — projets, stack technique et parcours. Déployé sur GitHub Pages.",
+		techs: ["React", "TypeScript", "CSS", "Vite"],
+		githubUrl: "https://github.com/ColineRbm/portfolio",
+		liveUrl: "https://ColineRbm.github.io/portfolio",
 		featured: false,
 	},
 ];

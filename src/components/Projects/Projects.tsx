@@ -4,12 +4,22 @@ import "./Projects.css";
 
 const projects = [
 	{
-		number: "07",
+		number: "08",
 		title: "Octet",
 		description:
 			"App de gestion d'une ressourcerie numérique — collecte, diagnostic, réparation, redistribution de matériel informatique. Auth JWT + Argon2, deux rôles admin/bénévole.",
 		techs: ["React", "TypeScript", "Express", "MySQL", "MongoDB"],
 		githubUrl: "https://github.com/ColineRbm/octet",
+		featured: true,
+	},
+	{
+		number: "07",
+		title: "Macro Dashboard Europe",
+		description:
+			"Analyse de l'inflation européenne 2020-2025 — données Eurostat, stats descriptives, graphiques interactifs. Dashboard déployé sur Streamlit Cloud.",
+		techs: ["Python", "Pandas", "Plotly", "Streamlit"],
+		githubUrl: "https://github.com/ColineRbm/macro-dashboard-europe",
+		liveUrl: "https://macro-dashboard-europe.streamlit.app",
 		featured: true,
 	},
 	{
